@@ -311,6 +311,7 @@ class ServerWindow(QtGui.QMainWindow):
                 for snake in self.snakes:
                     if snake.direction != 1:
                         snake.direction = 3
+        return QtGui.QMainWindow.eventFilter(self, source, event)
 
 
 if __name__ == '__main__':
